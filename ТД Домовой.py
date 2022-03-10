@@ -37,7 +37,7 @@ driver.find_element_by_id("bx_117848907_128136_add_basket_link").click()
 
 # Переходим в корзину
 sleep(1)
-driver.find_element_by_css_selector("[href='/personal/cart/']").click()
+driver.find_element_by_css_selector("[class='link-basket ajax-top-cart']").click()
 
 # Жмем кнопку "оформить заказ"
 sleep(1)
@@ -73,7 +73,7 @@ driver.find_element_by_xpath("//*[@id='in_name']/div[2]/button").click()
 
 # Функционал проверен - работает исправно, вернемся обратно в корзину
 sleep(1)
-driver.find_element_by_css_selector("[rel=nofollow]").click()
+driver.find_element_by_css_selector("[class='link-basket ajax-top-cart']").click()
 
 # Удаляем из корзины весь добавленный ранее товар, после чего сайт автоматически выкидывает нас на главную страницу
 sleep(1)
